@@ -2,6 +2,7 @@
 """Simple program to illustrate scraping web data and saving it to a file
 """
 
+import csv
 import requests
 import sys
 from bs4 import BeautifulSoup
@@ -16,4 +17,6 @@ if page.status_code != 200:
     sys.exit(1)
 
 soup = BeautifulSoup(page.content, 'html.parser')
+
+product_elements = soup.find_all('article', {'class': 'product_pod'})
 
