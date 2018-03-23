@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Book model for database interaction.
-"""
+'''Book model for database interaction.
+'''
 
 from peewee import *
 from playhouse.sqlite_ext import SqliteExtDatabase
 
 
-db = SqliteExtDatabase('books.db')
+db = SqliteExtDatabase('data.db')
 
 class Book(Model):
     class Meta:
