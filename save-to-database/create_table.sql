@@ -1,7 +1,7 @@
 -- 
 -- DDL statement for creating a simple SQLite table
 -- 
-CREATE TABLE IF NOT EXISTS books (
+CREATE TABLE IF NOT EXISTS book (
   id INTEGER PRIMARY KEY,
   name TEXT NOT NULL DEFAULT '',
   url TEXT,
